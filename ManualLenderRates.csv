@@ -1,4 +1,4 @@
-﻿productId,isChanged,bank,loan purpose,rate repayment type,product name,product type,interest type,interest rate,interest subType,rate additional info,rate tiers,rate calculation frequency,rate application frequency,rate additional value,comparison rate,interest payment due,description,is tailored,application link,effectiveFrom,effectiveTo,lastUpdated
+﻿productId,isChanged,bank,loan purpose,rate repayment type,product name,product type,interest type,interest rate,comparison rate,interest subType,rate additional info,rate tiers,rate calculation frequency,rate application frequency,rate additional value,interest payment due,description,is tailored,application link,effectiveFrom,effectiveTo,lastUpdated
 ,N/B,Athena,,,,,,,,,,,,,,,,,,,,
 ,N/B,Bluestone,,,,,,,,,,,,,,,,,,,,
 ,N/B,Border Bank,,,,,,,,,,,,,,,,,,,,
@@ -21,7 +21,26 @@
 ,N/B,Resi,,,,,,,,,,,,,,,,,,,,
 ,N/B,RESIMAC,,,,,,,,,,,,,,,,,,,,
 ,N/B,Sucasa,,,,,,,,,,,,,,,,,,,,
-,N/B,Tiimely,,,,,,,,,,,,,,,,,,,,
+,N/B,Tiimely,Owner_Occupied,Prinicpal_and_Interest,,RESIDENTIAL_MORTGAGES,,0.0594,0.0595,VARIABLE,,LVR <90%,,,,,,FALSE,,,,15/7/2024
+,N/B,Tiimely,Investment,Prinicpal_and_Interest,,RESIDENTIAL_MORTGAGES,,0.0629,0.0629,VARIABLE,,LVR <90%,,,,,,FALSE,,,,15/7/2024
+,N/B,Tiimely,Investment,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0654,0.0632,VARIABLE,,LVR <90%,,,,,,FALSE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Prinicpal_and_Interest,,RESIDENTIAL_MORTGAGES,,0.0594,0.0605,VARIABLE,,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Investment,Prinicpal_and_Interest,,RESIDENTIAL_MORTGAGES,,0.0629,0.0640,VARIABLE,,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Investment,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0654,0.0643,VARIABLE,With Offset • Investment • Interest only 1 year,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Investment,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0654,0.0645,VARIABLE,With Offset • Investment • Interest only 2 years,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Investment,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0654,0.0647,VARIABLE,With Offset • Investment • Interest only 3  years,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Investment,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0654,0.0648,VARIABLE,With Offset • Investment • Interest only 4  years,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Investment,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0654,0.0650,VARIABLE,With Offset • Investment • Interest only 5  years,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0611,VARIABLE,Owner-occupied • Interest only 1 year,LVR <90%,,,,,,FALSE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0621,VARIABLE,Owner-occupied • Interest only 2 years,LVR <90%,,,,,,FALSE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0630,VARIABLE,Owner-occupied • Interest only 3 years,LVR <90%,,,,,,FALSE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0639,VARIABLE,Owner-occupied • Interest only 4 years,LVR <90%,,,,,,FALSE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0647,VARIABLE,Owner-occupied • Interest only 5 years,LVR <90%,,,,,,FALSE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0611,VARIABLE,With Offset • Owner-occupied • Interest only 1 year,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0621,VARIABLE,With Offset • Owner-occupied • Interest only 2 years,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0630,VARIABLE,With Offset • Owner-occupied • Interest only 3 years,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0639,VARIABLE,With Offset • Owner-occupied • Interest only 4 years,LVR <90%,,,,,,TRUE,,,,15/7/2024
+,N/B,Tiimely,Owner_Occupied,Interest_Only,,RESIDENTIAL_MORTGAGES,,0.0709,0.0647,VARIABLE,With Offset • Owner-occupied • Interest only 5 years,LVR <90%,,,,,,TRUE,,,,15/7/2024
 ,N/B,Well Money,,,,,,,,,,,,,,,,,,,,
 ,N/B,Yard,,,,,,,,,,,,,,,,,,,,
 ,N/B,Yellow Brick Road,,,,,,,,,,,,,,,,,,,,
