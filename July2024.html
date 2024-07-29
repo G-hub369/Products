@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+    .public-DraftEditor-content {
+      white-space: normal !important;
+    }
+  
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+  @media screen and (max-width: 460px) {
+    .panel-text .twoColumnGroup .column,
+    .panel-text .threeColumnGroup .column {
+      max-width: 100% !important;
+    }
+    .panel-text .twoColumnGroup .column .collapsed {
+      margin-top: 0.5em !important;
+      text-align: left !important;
+    }
+    .panel-text {
+      max-width: 100% !important;
+    }
+  }
+
+  @media screen and (min-width: 461px) and (max-width: 620px) {
+    .panel-text .twoColumnGroup .column {
+      max-width: 50% !important;
+    }
+    .panel-text .threeColumnGroup .column {
+      max-width: 33% !important;
+    }
+  }
+
+    @media screen and (max-width: 460px) {
+      .panel-mixed-horizontal-16 .column {
+        max-width: 100% !important;
+      }
+      .panel-mixed-horizontal-16 .imgColumn {
+        
+      }
+      .panel-mixed-horizontal-16 .twoColumnGroup img {
+        max-width: 100% !important;
+      }
+    }
+
+    @media screen and (min-width: 461px) and (max-width: 620px) {
+      .panel-mixed-horizontal-16 .twoColumnGroup .column {
+        max-width: 50% !important;
+      }
+    }
+  
+    @media screen and (max-width: 460px) {
+      .panel-image-23 {
+        display: table;
+      }
+
+      .panel-image-23 .twoColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-23 .twoColumnGroup .column {
+        max-width: 100% !important;
+      }
+
+      .panel-image-23 .threeColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-23 .threeColumnGroup .column {
+        max-width: 100% !important;
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      .panel-image-23 .fourColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-23 .fourColumnGroup .column {
+        max-width: 50% !important;
+      }
+    }
+
+    @media screen and (min-width: 461px) and (max-width: 620px) {
+      .panel-image-23 .twoColumnGroup .column {
+        max-width: 50% !important;
+      }
+
+      .panel-image-23 .threeColumnGroup .column {
+        max-width: 33% !important;
+      }
+    }
+  
+    @media screen and (max-width: 460px) {
+      .panel-image-24 {
+        display: table;
+      }
+
+      .panel-image-24 .twoColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-24 .twoColumnGroup .column {
+        max-width: 100% !important;
+      }
+
+      .panel-image-24 .threeColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-24 .threeColumnGroup .column {
+        max-width: 100% !important;
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      .panel-image-24 .fourColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-24 .fourColumnGroup .column {
+        max-width: 50% !important;
+      }
+    }
+
+    @media screen and (min-width: 461px) and (max-width: 620px) {
+      .panel-image-24 .twoColumnGroup .column {
+        max-width: 50% !important;
+      }
+
+      .panel-image-24 .threeColumnGroup .column {
+        max-width: 33% !important;
+      }
+    }
+  
+    @media screen and (max-width: 460px) {
+      .panel-image-26 {
+        display: table;
+      }
+
+      .panel-image-26 .twoColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-26 .twoColumnGroup .column {
+        max-width: 100% !important;
+      }
+
+      .panel-image-26 .threeColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-26 .threeColumnGroup .column {
+        max-width: 100% !important;
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      .panel-image-26 .fourColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-26 .fourColumnGroup .column {
+        max-width: 50% !important;
+      }
+    }
+
+    @media screen and (min-width: 461px) and (max-width: 620px) {
+      .panel-image-26 .twoColumnGroup .column {
+        max-width: 50% !important;
+      }
+
+      .panel-image-26 .threeColumnGroup .column {
+        max-width: 33% !important;
+      }
+    }
+  
+    @media screen and (max-width: 460px) {
+      .panel-image-27 {
+        display: table;
+      }
+
+      .panel-image-27 .twoColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-27 .twoColumnGroup .column {
+        max-width: 100% !important;
+      }
+
+      .panel-image-27 .threeColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-27 .threeColumnGroup .column {
+        max-width: 100% !important;
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      .panel-image-27 .fourColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-27 .fourColumnGroup .column {
+        max-width: 50% !important;
+      }
+    }
+
+    @media screen and (min-width: 461px) and (max-width: 620px) {
+      .panel-image-27 .twoColumnGroup .column {
+        max-width: 50% !important;
+      }
+
+      .panel-image-27 .threeColumnGroup .column {
+        max-width: 33% !important;
+      }
+    }
+  
+    @media screen and (max-width: 460px) {
+      .panel-image-28 {
+        display: table;
+      }
+
+      .panel-image-28 .twoColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-28 .twoColumnGroup .column {
+        max-width: 100% !important;
+      }
+
+      .panel-image-28 .threeColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-28 .threeColumnGroup .column {
+        max-width: 100% !important;
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      .panel-image-28 .fourColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-28 .fourColumnGroup .column {
+        max-width: 50% !important;
+      }
+    }
+
+    @media screen and (min-width: 461px) and (max-width: 620px) {
+      .panel-image-28 .twoColumnGroup .column {
+        max-width: 50% !important;
+      }
+
+      .panel-image-28 .threeColumnGroup .column {
+        max-width: 33% !important;
+      }
+    }
+  
+    @media screen and (max-width: 460px) {
+      .panel-image-29 {
+        display: table;
+      }
+
+      .panel-image-29 .twoColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-29 .twoColumnGroup .column {
+        max-width: 100% !important;
+      }
+
+      .panel-image-29 .threeColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-29 .threeColumnGroup .column {
+        max-width: 100% !important;
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      .panel-image-29 .fourColumnGroup img {
+        max-width: 100% !important;
+      }
+
+      .panel-image-29 .fourColumnGroup .column {
+        max-width: 50% !important;
+      }
+    }
+
+    @media screen and (min-width: 461px) and (max-width: 620px) {
+      .panel-image-29 .twoColumnGroup .column {
+        max-width: 50% !important;
+      }
+
+      .panel-image-29 .threeColumnGroup .column {
+        max-width: 33% !important;
+      }
+    }
+  </style>
+<meta property="og:title" content="Time to shop around as average loan reaches $626k | Home Guarantee Scheme update | Vendor data shows sales trends">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://sp.activepipe.com/image/111426848/CldMWFMDBgFRBlMHHABTVlgZAQJZUk9UAwsCSFRUB1NYAAVUBAQBCA==">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RV9PF03YNH"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-RV9PF03YNH');
+</script>
+</head>
+<body style="Margin:0;background-color:#f3f5f6">
+<img width="1" height="1" src="?mode=img" style="display:block;border:0"><div width="1" height="1" style="display:block;border:0;background-image:url('?mode=css')"></div>
+<center style="width:100%;table-layout:fixed;text-size-adjust:100%">
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><img style="width:100%;border:0;height:45px" height="45" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td bgcolor="#021c63" style="padding:20px;background-color:#021c63"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;font-size:15px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px;text-align:center;mso-line-height-rule:at-least"><a href="https://t.apemail.net/c/nqkr6vk3kzmvyhqvdmdrwaaab4bacaypa4nqogyhdmkxs5qvdmkqcvagayhveflk-nqdbwfkcivnrkgyvpf3bkgyfauhaabipdmdaidqgamnqogyfaqha6aihaynqogyhdmkr6vk3kzmvyhqvdmdrwwkclnnrwfl3lbifqfi3aaaa6aqbamhqogyvnr3vqrkqdfafevkelzbve2qvdnbukqssdmaqcbabdmkxs5qvdnmuew23dnmuew23dnmuew23dnmuew23dmkqcvagayhveflk" style="border-style:none"> <img src="https://sp.activepipe.com/image/111631639/DwRAW1UCAl8CA1QATgZSAlIdBlMDAE9RWldSH1gPB1BcBQoDUAdXXA==" style="width:100%;border:0;display:inline-block;border-style:none;max-width:400px" width="400" border="0" alt=""> </a></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" bgcolor="#ffffff" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px;background-color:#ffffff" cellpadding="0" cellspacing="0"><tbody>
+<tr><td style="padding:0"><img style="width:100%;border:0;display:block;Margin:0 auto;height:0" height="0" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr>
+<tr><td style="padding:0;background-color:#cccccc;font-size:1px;line-height:1px" bgcolor="#cccccc" height="1" width="100%"><img style="width:100%;border:0;display:block;Margin:0 auto;height:1px" height="1" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr>
+<tr><td style="padding:0"><img style="width:100%;border:0;display:block;Margin:0 auto;height:0" height="0" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr>
+</tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><img style="width:100%;border:0;height:5px" height="5" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#ffffff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#ffffff" style="padding:10px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:580px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="d3jek" data-offset-key="dibpq-0-0"><div data-offset-key="dibpq-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span data-offset-key="dibpq-0-0"><span data-text="true">Hi </span></span><span data-offset-key="dibpq-2-0"><span data-text="true">,</span></span>
+</div></div>
+<div class="" data-block="true" data-editor="d3jek" data-offset-key="ac6rc-0-0"><br></div>
+<div class="" data-block="true" data-editor="d3jek" data-offset-key="4i9h1-0-0"><div data-offset-key="4i9h1-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="4i9h1-0-0"><span data-text="true">In this month’s newsletter, I’ve got four timely stories about loan sizes, investor activity, housing incentives and property sales. Here are the headlines:</span></span></div></div>
+<ul style="list-style-type:disc;padding:revert;Margin:revert;color:#333333">
+<li class="public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR" data-block="true" data-editor="d3jek" data-offset-key="3v2oe-0-0"><div data-offset-key="3v2oe-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="3v2oe-0-0"><span data-text="true">Why you should shop around for loans</span></span></div></li>
+<li class="public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR" data-block="true" data-editor="d3jek" data-offset-key="fsb9f-0-0"><div data-offset-key="fsb9f-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="fsb9f-0-0"><span data-text="true">Home Guarantee Scheme update</span></span></div></li>
+<li class="public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR" data-block="true" data-editor="d3jek" data-offset-key="48rna-0-0"><div data-offset-key="48rna-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="48rna-0-0"><span data-text="true">Vendor data shows sales trends</span></span></div></li>
+<li class="public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR" data-block="true" data-editor="d3jek" data-offset-key="246k2-0-0"><div data-offset-key="246k2-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="246k2-0-0"><span data-text="true">Investor borrowing jumps 29.5%</span></span></div></li>
+</ul>
+<div class="" data-block="true" data-editor="d3jek" data-offset-key="e698q-0-0"><div data-offset-key="e698q-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="e698q-0-0" style="font-weight:bold"><span data-text="true">Read more below. </span></span></div></div>
+</div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><img style="width:100%;border:0;height:5px" height="5" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-image-23"><tbody><tr><td style="padding:0;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div class="column" style="width:100%;display:inline-block;vertical-align:top;max-width:600px"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;width:100%;text-align:left;font-size:15px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px;mso-line-height-rule:at-least"><img src="https://sp.activepipe.com/image/111426848/CldMWFMDBgFRBlMHHABTVlgZAQJZUk9UAwsCSFRUB1NYAAVUBAQBCA==" style="width:100%;border:0;display:block;border-style:none;max-width:600px" width="600" border="0" alt=""></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#ffffff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#ffffff" style="padding:10px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:580px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="abrsa" data-offset-key="8v2pe-0-0"><div data-offset-key="8v2pe-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="8v2pe-0-0"><span data-text="true">With property prices at record levels, the size of the average mortgage has also hit new highs, making it more important than ever that you shop around for the right loan.</span></span></div></div>
+<div class="" data-block="true" data-editor="abrsa" data-offset-key="erg08-0-0"><br></div>
+<div class="" data-block="true" data-editor="abrsa" data-offset-key="epmd3-0-0"><div data-offset-key="epmd3-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="epmd3-0-0"><span data-text="true">Australia’s median property price reached a record $794,000 in June, up 8.0% year on year, according to CoreLogic. Meanwhile, the size of the average owner-occupied loan reached a record $626,055 at the end of May (the most recent month for which we have data), up 7.1% year on year, according to the Australian Bureau of Statistics.</span></span></div></div>
+<div class="" data-block="true" data-editor="abrsa" data-offset-key="9uc8t-0-0"><br></div>
+<div class="" data-block="true" data-editor="abrsa" data-offset-key="3u3sv-0-0"><div data-offset-key="3u3sv-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="3u3sv-0-0"><span data-text="true">Just as interest rates can vary significantly from lender to lender, so can your borrowing power, depending on your financial profile, the type of property you’re planning to buy and the location of the property. Sometimes, one institution might be willing to lend you tens of thousands – or even hundreds of thousands – of dollars more than another institution.</span></span></div></div>
+</div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-image-24"><tbody><tr><td style="padding:0;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div class="column" style="width:100%;display:inline-block;vertical-align:top;max-width:600px"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;width:100%;text-align:left;font-size:15px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px;mso-line-height-rule:at-least"><img src="https://sp.activepipe.com/image/111426858/X1caWwpYA1QDUwFTGgYHUQ8eVwQMAE8BVVdcSVcABA0FBFEHAlEFVA==" style="width:100%;border:0;display:block;border-style:none;max-width:600px" width="600" border="0" alt=""></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#ffffff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#ffffff" style="padding:10px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:580px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true"><div class="" data-block="true" data-editor="c4677" data-offset-key="bifr0-0-0"><div data-offset-key="bifr0-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="bifr0-0-0"><span data-text="true">Trying to source all this information yourself would be very time-consuming. But brokers have an intimate understanding of the credit policies of many different lenders. That’s why, if you get a home loan through a broker, they can recommend a lender that is suitable for someone with your profile and scenario.</span></span></div></div></div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td bgcolor="#ffffff" style="padding:0;background-color:#ffffff"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px"><div style="Margin:0;text-align:center"><span style="display:inline-block"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td style="color:#333333;text-decoration:none;font-size:15px;font-style:normal;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;background-color:#021c63;border:none;border-radius:0;text-align:center;padding:0 20px 0 20px;height:40px;min-width:100px;line-height:22px;text-size-adjust:100%;cursor:pointer"><a href="https://managemypreferences.com/loans/new?token=nrmuew23dnmuew23dnmuew23dnmuew23dmdakg2zijnvwgyvafkambqpkikwu-nqdbwfkhivmeousfinhbuw2ykzmrkgyvpf3bkgyfauhaabipdmdaidqgamnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnugrkckinvsqs3lmnvsqs3lmnrkakuayda6uqvni" style="color:#ffffff;text-decoration:none;font-size:14px;font-style:normal;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400" target="_blank"><span style="color:#ffffff;text-decoration:none;font-size:14px;font-style:normal;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400" target="_blank">Talk to me about your borrowing power</span></a></td></tr></tbody></table></td></tr></tbody></table></span></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><img style="width:100%;border:0;height:5px" height="5" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-image-26"><tbody><tr><td style="padding:0;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div class="column" style="width:100%;display:inline-block;vertical-align:top;max-width:600px"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;width:100%;text-align:left;font-size:15px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px;mso-line-height-rule:at-least"><img src="https://sp.activepipe.com/image/111426882/D1IcDgAGDAcBBVVcGQYEVQUYBAQNAhUGVFQAHFUGAFVdBlBWAAdQBA==" style="width:100%;border:0;display:block;border-style:none;max-width:600px" width="600" border="0" alt=""></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#ffffff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#ffffff" style="padding:10px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:580px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="br331" data-offset-key="990n-0-0"><div data-offset-key="990n-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="990n-0-0"><span data-text="true">The federal government has allocated another 50,000 places across Australia to its Home Guarantee Scheme (HGS) for the 2024-25 financial year.</span></span></div></div>
+<div class="" data-block="true" data-editor="br331" data-offset-key="6a3c-0-0"><br></div>
+<div class="" data-block="true" data-editor="br331" data-offset-key="fl88a-0-0"><div data-offset-key="fl88a-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="fl88a-0-0"><span data-text="true">That includes 35,000 places for the First Home Guarantee and 10,000 for the Regional First Home Buyer Guarantee. Under the first program, the government supports eligible first home buyers to purchase a property with a 5% deposit, without having to pay lender's mortgage insurance (LMI). The second program is identical, but applies to regional applicants purchasing regional properties.</span></span></div></div>
+<div class="" data-block="true" data-editor="br331" data-offset-key="9j6fj-0-0"><br></div>
+<div class="" data-block="true" data-editor="br331" data-offset-key="6srh2-0-0"><div data-offset-key="6srh2-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="6srh2-0-0"><span data-text="true">The HGS also includes 5,000 places for the Family Home Guarantee, through which the government helps eligible single parents and single legal guardians to purchase a property with a 2% deposit, without paying LMI.</span></span></div></div>
+<div class="" data-block="true" data-editor="br331" data-offset-key="97g2k-0-0"><br></div>
+<div class="" data-block="true" data-editor="br331" data-offset-key="duoqv-0-0"><div data-offset-key="duoqv-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="duoqv-0-0"><span data-text="true">For all three schemes, applicants must be owner-occupiers. Income caps apply ($125,000 for single applicants, $200,000 for joint applicants), as do property price caps (which vary from state to state).</span></span></div></div>
+<div class="" data-block="true" data-editor="br331" data-offset-key="2tkvt-0-0"><br></div>
+<div class="" data-block="true" data-editor="br331" data-offset-key="6mg96-0-0"><div data-offset-key="6mg96-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="6mg96-0-0"><span data-text="true">The HGS has strict conditions and is not available through all lenders. If you’re unsure whether you’re eligible or how the scheme works, reach out and I’ll be happy to help.</span></span></div></div>
+</div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td bgcolor="#ffffff" style="padding:0;background-color:#ffffff"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px"><div style="Margin:0;text-align:center"><span style="display:inline-block"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td style="color:#333333;text-decoration:none;font-size:15px;font-style:normal;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;background-color:#021c63;border:none;border-radius:0;text-align:center;padding:0 20px 0 20px;height:40px;min-width:100px;line-height:22px;text-size-adjust:100%;cursor:pointer"><a href="https://managemypreferences.com/loans/new?token=nrmuew23dnmuew23dnmuew23dnmuew23dmdakg2zijnvwgyvafkambqpkikwu-nqdbwfkhivmeousfinhbuw2ykzmrkgyvpf3bkgyfauhaabipdmdaidqgamnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnugrkckinvsqs3lmnvsqs3lmnrkakuayda6uqvni" style="color:#ffffff;text-decoration:none;font-size:14px;font-style:normal;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400" target="_blank"><span style="color:#ffffff;text-decoration:none;font-size:14px;font-style:normal;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400" target="_blank">Get in touch to apply</span></a></td></tr></tbody></table></td></tr></tbody></table></span></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><img style="width:100%;border:0;height:5px" height="5" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-image-27"><tbody><tr><td style="padding:0;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div class="column" style="width:100%;display:inline-block;vertical-align:top;max-width:600px"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;width:100%;text-align:left;font-size:15px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px;mso-line-height-rule:at-least"><img src="https://sp.activepipe.com/image/111426890/X1BMXFcAA1ZRVVAGHVACDgdJUVVSAh1WCQEDHwJXAQIHBlBUVQ5RVg==" style="width:100%;border:0;display:block;border-style:none;max-width:600px" width="600" border="0" alt=""></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#ffffff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#ffffff" style="padding:10px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:580px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="ja66" data-offset-key="96j12-0-0"><div data-offset-key="96j12-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="96j12-0-0"><span data-text="true">Record property prices are proving to be good news for vendors, with 94.3% of all vendors in the March quarter selling their home for more than they'd originally paid, according to CoreLogic. That was the fourth consecutive quarterly increase and the highest share since 2010.</span></span></div></div>
+<div class="" data-block="true" data-editor="ja66" data-offset-key="4u2dd-0-0"><br></div>
+<div class="" data-block="true" data-editor="ja66" data-offset-key="7j8co-0-0"><div data-offset-key="7j8co-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="7j8co-0-0"><span data-text="true">However, the share of vendors who made a gross profit varied significantly from capital city to city, reflecting different market performance.</span></span></div></div>
+<div class="" data-block="true" data-editor="ja66" data-offset-key="fp65d-0-0"><br></div>
+<div class="" data-block="true" data-editor="ja66" data-offset-key="459a4-0-0"><div data-offset-key="459a4-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="459a4-0-0"><span data-text="true">Another significant finding was that house owners were more likely to record a profit than unit owners, by a share of 97.1% to 89.0%.</span></span></div></div>
+<div class="" data-block="true" data-editor="ja66" data-offset-key="9te1o-0-0"><br></div>
+<div class="" data-block="true" data-editor="ja66" data-offset-key="3rm6f-0-0"><div data-offset-key="3rm6f-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="3rm6f-0-0"><span data-text="true">Also, there was a clear link between the amount of time someone had owned a home and the size of their profit. Vendors made a median profit of $82,000 with a hold period of up to two years, $275,000 for up to 10 years, $435,000 for up to 20 years and $780,000 for up to 30 years.</span></span></div></div>
+</div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><img style="width:100%;border:0;height:5px" height="5" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-image-28"><tbody><tr><td style="padding:0;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div class="column" style="width:100%;display:inline-block;vertical-align:top;max-width:600px"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;width:100%;text-align:left;font-size:15px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px;mso-line-height-rule:at-least"><img src="https://sp.activepipe.com/image/111426900/Ul1ACFRQBgJTBAdUGVQGBQIcUQlQBE8MUlNSHwJRUARbWwwGVVhVDQ==" style="width:100%;border:0;display:block;border-style:none;max-width:600px" width="600" border="0" alt=""></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#ffffff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#ffffff" style="padding:10px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:580px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="g4hn" data-offset-key="9l0ct-0-0"><div data-offset-key="9l0ct-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="9l0ct-0-0"><span data-text="true">Home loan volumes have significantly increased over the past year, especially among investors.</span></span></div></div>
+<div class="" data-block="true" data-editor="g4hn" data-offset-key="f1b2b-0-0"><br></div>
+<div class="" data-block="true" data-editor="g4hn" data-offset-key="2eo9-0-0"><div data-offset-key="2eo9-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="2eo9-0-0"><span data-text="true">Investors committed to $10.67 billion of mortgages in May, according to the latest data from the Australian Bureau of Statistics. That was 29.5% higher than the year before.</span></span></div></div>
+<div class="" data-block="true" data-editor="g4hn" data-offset-key="5fad0-0-0"><br></div>
+<div class="" data-block="true" data-editor="g4hn" data-offset-key="fhags-0-0"><div data-offset-key="fhags-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="fhags-0-0"><span data-text="true">At the same time, owner-occupier borrowing activity rose 12.2%, to $18.13 billion.</span></span></div></div>
+<div class="" data-block="true" data-editor="g4hn" data-offset-key="bkq0b-0-0"><br></div>
+<div class="" data-block="true" data-editor="g4hn" data-offset-key="23uao-0-0"><div data-offset-key="23uao-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="23uao-0-0"><span data-text="true">Investors were responsible for 37.1% of the home loans that were issued in May. Despite the surge, that's only slightly higher than the long-term average (in records dating back to 2002) of 35.9%.</span></span></div></div>
+</div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-image-29"><tbody><tr><td style="padding:0;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div class="column" style="width:100%;display:inline-block;vertical-align:top;max-width:600px"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;width:100%;text-align:left;font-size:15px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px;mso-line-height-rule:at-least"><img src="https://sp.activepipe.com/image/111426901/CVNOXARXAFMHXVMESFBRUAceBAVRWRhaUAYHFFQPAwMHV1EEUVAAVg==" style="width:100%;border:0;display:block;border-style:none;max-width:600px" width="600" border="0" alt=""></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#ffffff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#ffffff" style="padding:10px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:580px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="4se8g" data-offset-key="a2phm-0-0"><div data-offset-key="a2phm-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="a2phm-0-0"><span data-text="true">By way of comparison, investors' share of home loan activity bottomed out at 22.4% in 2021 and peaked at 45.9% in 2015, while owner-occupiers’ share reached a low of 54.1% in 2015 and a high of 77.6% in 2021.</span></span></div></div>
+<div class="" data-block="true" data-editor="4se8g" data-offset-key="63deh-0-0"><br></div>
+<div class="" data-block="true" data-editor="4se8g" data-offset-key="dud21-0-0"><div data-offset-key="dud21-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="dud21-0-0"><span data-text="true">If you’re thinking about applying for a home loan, here are three important tips to make yourself more creditworthy in the eyes of lenders:</span></span></div></div>
+<ul style="list-style-type:disc;padding:revert;Margin:revert;color:#333333">
+<li class="public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR" data-block="true" data-editor="4se8g" data-offset-key="3pqfv-0-0"><div data-offset-key="3pqfv-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="3pqfv-0-0"><span data-text="true">Reduce your spending, to free up money to pay off a loan</span></span></div></li>
+<li class="public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR" data-block="true" data-editor="4se8g" data-offset-key="6tnb1-0-0"><div data-offset-key="6tnb1-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="6tnb1-0-0"><span data-text="true">Pay all your bills on time, to maintain a good credit score</span></span></div></li>
+<li class="public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR" data-block="true" data-editor="4se8g" data-offset-key="bmh6f-0-0"><div data-offset-key="bmh6f-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="bmh6f-0-0"><span data-text="true">Contact a broker, who will compare the market for you</span></span></div></li>
+</ul>
+</div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><img style="width:100%;border:0;height:5px" height="5" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#ffffff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#ffffff" style="padding:10px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:580px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true"><div class="" data-block="true" data-editor="e3q5l" data-offset-key="bk44a-0-0"><div data-offset-key="bk44a-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="bk44a-0-0"><span data-text="true">If you need assistance with a home loan, investment loan or car loan, please get in touch. I can explain your options, manage your application and make the entire process stress-free.</span></span></div></div></div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td bgcolor="#ffffff" style="padding:0;background-color:#ffffff"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="Margin:0;text-align:center"><span style="display:inline-block"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td style="color:#333333;text-decoration:none;font-size:15px;font-style:normal;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;background-color:#021c63;border:none;border-radius:0;text-align:center;padding:0 20px 0 20px;height:40px;min-width:100px;line-height:22px;text-size-adjust:100%;cursor:pointer"><a href="https://managemypreferences.com/loans/new?token=nrmuew23dnmuew23dnmuew23dnmuew23dmdakg2zijnvwgyvafkambqpkikwu-nqdbwfkhivmeousfinhbuw2ykzmrkgyvpf3bkgyfauhaabipdmdaidqgamnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnugrkckinvsqs3lmnvsqs3lmnrkakuayda6uqvni" style="color:#ffffff;text-decoration:none;font-size:14px;font-style:normal;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400" target="_blank"><span style="color:#ffffff;text-decoration:none;font-size:14px;font-style:normal;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400" target="_blank">BOOK A FREE APPOINTMENT</span></a></td></tr></tbody></table></td></tr></tbody></table></span></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" bgcolor="#ffffff" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px;background-color:#ffffff" cellpadding="0" cellspacing="0" class="panel-mixed-horizontal-16"><tbody><tr><td style="padding:10px;text-align:center;font-size:0;border-collapse:collapse" class="twoColumnGroup" dir="ltr"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0">
+<!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" dir="ltr"><tr><td width="350" valign="top"><![endif]--><div class="column" dir="ltr" style="width:100%;display:inline-block;max-width:350px;vertical-align:top"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px" dir="ltr"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="uuud" data-offset-key="2evff-0-0"><div data-offset-key="2evff-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="2evff-0-0"><span data-text="true">Kind Regards,</span></span></div></div>
+<div class="" data-block="true" data-editor="uuud" data-offset-key="57ugs-0-0"><div data-offset-key="57ugs-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span><span data-offset-key="57ugs-0-0"><span data-text="true">Alex</span></span></span><span data-offset-key="57ugs-1-0"><span data-text="true"> </span></span><span><span data-offset-key="57ugs-2-0"><span data-text="true">Lazarou</span></span></span>
+</div></div>
+<div class="" data-block="true" data-editor="uuud" data-offset-key="7kb7r-0-0"><div data-offset-key="7kb7r-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><a href="https://t.apemail.net/c/nqkr6vk3kzmvyhqvdmdrwaaab4bacayoaanqogyhdmkxs5qvdmkqcvagayhveflk-nqdbwfkcivnrkgyvpf3bkgyfauhaabipdmdaidqgamnqogyfaqha6aihaynqogyhdmkr6vk3kzmvyhqvdmdrwwkclnnrwflhivpfuvsfjylwox2ylfjbkgyaaahqeaidbyabwfkdkjnq23dxijcferizi5cv4wswivheox2ylfjgufi3incueuq3aeaqiai3cv4xmfi3lfbfwwy3lfbfwwy3lfbfwwy3lfbfwwy3cuavibqgb5jbk2q" style="color:#021c63;text-decoration:none"><span style="color:#021c63;text-decoration:none"><span data-offset-key="7kb7r-0-0"><span data-text="true">1800 369 300</span></span></span></a></div></div>
+</div></div></div></div></td></tr></tbody></table></div>
+<!--[if (gte mso 9)|(IE)]></td><td width="230" valign="top"><![endif]--><div class="column imgColumn" dir="ltr" style="width:100%;display:inline-block;max-width:230px;vertical-align:top"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;max-width:300px;height:auto;mso-line-height-rule:at-least" dir="ltr"><img src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" style="width:100%;border:0;display:block;border-style:none;max-width:210px" width="210" border="0" alt=""></td></tr></tbody></table></div>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><center><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td bgcolor="#021c63" style="padding:13px 20px 10px;background-color:#021c63"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr>
+<td style="padding:0;text-align:center" aria-label="LinkedIn"><a href="https://t.apemail.net/c/nqkr6vk3kzmvyhqvdmdrwaaab4bacaqgaqnqogyhdmkxs5qvdmkqcvagayhveflk-nqdbwfkcivnrkgyvpf3bkgyfauhaabipdmdaidqgamnqogyfaqha6aihaynqogyhdmkr6vk3kzmvyhqvdmdrwwkclnnrwfk3lzmvyustlzmrkgyaaahqeaicaycbwflmo5beiusfdfnv4wk4kjjv4wlkcunugrkckinqcaieaenrk6lwcunvsqs3lmnvsqs3lmnvsqs3lmnvsqs3lmnrkakuayda6uqvni"><img src="https://sp.activepipe.com/image/104274485/XFYdWVQCAFMHBwVWGlNUVlcUDAMLVUtWUAkDTFIBUVRTUAUFAVQFAA==" style="border:0;display:inline;border-style:none;max-width:32px" width="32" border="0" alt=""></a></td>
+<td style="padding:0;text-align:center" aria-label="Instagram"><a href="https://t.apemail.net/c/nqkr6vk3kzmvyhqvdmdrwaaab4bacaqfa4nqogyhdmkxs5qvdmkqcvagayhveflk-nqdbwfkcivnrkgyvpf3bkgyfauhaabipdmdaidqgamnqogyfaqha6aihaynqogyhdmkr6vk3kzmvyhqvdmdrwwkclnnrwfk6lfcegvsqivlfufi3aaaa6aqbaicqogyvnr3uercsiumv4wkeinlfarkwljvbkg2divbfegybaecacgyvpf3bkg2zijnvwg2zijnvwg2zijnvwg2zijnvwgyvafkambqpkikwu"><img src="https://sp.activepipe.com/image/104274492/Dl1KXAVRBgcHAFoJH1ZeVVNJVwQCVkhQAwQAFFZYUFRXAQcCVgINVg==" style="border:0;display:inline;border-style:none;max-width:32px" width="32" border="0" alt=""></a></td>
+<td style="padding:0;text-align:center" aria-label="YouTube"><a href="https://t.apemail.net/c/nqkr6vk3kzmvyhqvdmdrwaaab4bacaqfamnqogyhdmkxs5qvdmkqcvagayhveflk-nqdbwfkcivnrkgyvpf3bkgyfauhaabipdmdaidqgamnqogyfaqha6aihaynqogyhdmkr6vk3kzmvyhqvdmdrwwkclnnrwfkolbbegqsvkikrwaaab4bacaqfamnrk3dxijcferizjzmeeq2ckvjgufi3incueuq3aeaqiai3cv4xmfi3lfbfwwy3lfbfwwy3lfbfwwy3lfbfwwy3cuavibqgb5jbk2q"><img src="https://sp.activepipe.com/image/104274496/CVVBXAMDAQFdUlACHVQHUAMZAANbBEhaDwgFSAEGBgdUCFkFBVMLAw==" style="border:0;display:inline;border-style:none;max-width:32px" width="32" border="0" alt=""></a></td>
+</tr></tbody></table></td></tr></tbody></table></center>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#021c63">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#021c63" style="padding:20px;text-align:center;font-size:0;border-collapse:collapse" class="twoColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0">
+<!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="280" valign="top"><![endif]--><div style="width:100%;display:inline-block;vertical-align:top;max-width:280px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;width:100%;text-align:left;font-size:15px;word-break:break-word;font-family:Poppins, Helvetica, Arial, sans-serif;color:#ffffff;line-height:22px;font-weight:400"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="r1o9" data-offset-key="fu3go-0-0" style="font-size:24px;color:#ffffff;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;font-style:normal;line-height:29px"><div data-offset-key="fu3go-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><span data-offset-key="fu3go-0-0"><span data-text="true">Contact Us</span></span></div></div>
+<div class="" data-block="true" data-editor="r1o9" data-offset-key="b5o60-0-0" style="color:#ffffff;font-weight:400"><br></div>
+<div class="" data-block="true" data-editor="r1o9" data-offset-key="80ue5-0-0" style="color:#ffffff;font-weight:400"><div data-offset-key="80ue5-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"><a href="https://t.apemail.net/c/nqkr6vk3kzmvyhqvdmdrwaaab4bacaqea4nqogyhdmkxs5qvdmkqcvagayhveflk-nqdbwfkcivnrkgyvpf3bkgyfauhaabipdmdaidqgamnqogyfaqha6aihaynqogyhdmkr6vk3kzmvyhqvdmdrwwkclnnrwflzkznfefi3aaaa6aqbaicaogyvnr3vqrkqdfafevkelzbve2qvdnbukqssdmaqcbabdmkxs5qvdnmuew23dnmuew23dnmuew23dnmuew23dmkqcvagayhveflk" style="color:#ffffff;text-decoration:none;font-weight:400"><span style="color:#ffffff;text-decoration:none;font-weight:400"><span data-offset-key="80ue5-0-0"><span data-text="true">High Finance Australia</span></span></span></a></div></div>
+<div class="" data-block="true" data-editor="r1o9" data-offset-key="q42f-0-0" style="color:#ffffff;font-weight:400"><div data-offset-key="q42f-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span><span data-offset-key="q42f-0-0"><span data-text="true">20</span></span></span><span data-offset-key="q42f-1-0"><span data-text="true"> </span></span><span><span data-offset-key="q42f-2-0"><span data-text="true">Martin Place</span></span></span>
+</div></div>
+<div class="" data-block="true" data-editor="r1o9" data-offset-key="4nag6-0-0" style="color:#ffffff;font-weight:400"><div data-offset-key="4nag6-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span><span data-offset-key="4nag6-0-0"><span data-text="true">Sydney</span></span></span><span data-offset-key="4nag6-1-0"><span data-text="true"> </span></span><span><span data-offset-key="4nag6-2-0"><span data-text="true">NSW</span></span></span><span data-offset-key="4nag6-3-0"><span data-text="true"> </span></span><span><span data-offset-key="4nag6-4-0"><span data-text="true">2000</span></span></span>
+</div></div>
+</div></div></div></div></td></tr></tbody></table></div>
+<!--[if (gte mso 9)|(IE)]></td><td width="280" valign="top"><![endif]--><div style="width:100%;display:inline-block;vertical-align:top;max-width:280px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;width:100%;text-align:left;font-size:15px;word-break:break-word;font-family:Poppins, Helvetica, Arial, sans-serif;color:#ffffff;line-height:22px;font-weight:400"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="jogc" data-offset-key="38ohk-0-0" style="font-size:24px;color:#ffffff;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;font-style:normal;line-height:29px"><br></div>
+<div class="" data-block="true" data-editor="jogc" data-offset-key="bct0f-0-0" style="color:#ffffff;font-weight:400"><br></div>
+<div class="" data-block="true" data-editor="jogc" data-offset-key="137sq-0-0" style="color:#ffffff;font-weight:400"><div style="text-align:left"><div data-offset-key="137sq-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"></div></div></div>
+<div class="" data-block="true" data-editor="jogc" data-offset-key="3faad-0-0" style="color:#ffffff;font-weight:400"><div data-offset-key="3faad-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"></div></div>
+<div class="" data-block="true" data-editor="jogc" data-offset-key="e7ufv-0-0" style="color:#ffffff;font-weight:400"><div style="text-align:left"><div data-offset-key="e7ufv-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span data-offset-key="e7ufv-0-0"><span data-text="true">P: </span></span><a href="https://t.apemail.net/c/nqkr6vk3kzmvyhqvdmdrwaaab4bacdqfaenqogyhdmkxs5qvdmkqcvagayhveflk-nqdbwfkcivnrkgyvpf3bkgyfauhaabipdmdaidqgamnqogyfaqha6aihaynqogyhdmkr6vk3kzmvyhqvdmdrwwkclnnrwflhivpfuvsfjylwox2ylfjbkgyaaahqeaioauarwfkdkjnq23dxlbcvagkhivpfuvsfjzdv6wczkjvbkg2divbfegybaecacgyvpf3bkg2zijnvwg2zijnvwg2zijnvwg2zijnvwgyvafkambqpkikwu" style="color:#ffffff;text-decoration:none;font-weight:400"><span style="color:#ffffff;text-decoration:none;font-weight:400"><span data-offset-key="e7ufv-1-0"><span data-text="true">1800 369 300</span></span></span></a><span data-offset-key="e7ufv-2-0"><span data-text="true"> |</span></span><span data-offset-key="e7ufv-2-1" style="color:#abadb3"><span data-text="true"> </span></span><a href="https://t.apemail.net/c/nqkr6vk3kzmvyhqvdmdrwaaab4bacaqeb4nqogyhdmkxs5qvdmkqcvagayhveflk-nqdbwfkcivnrkgyvpf3bkgyfauhaabipdmdaidqgamnqogyfaqha6aihaynqogyhdmkr6vk3kzmvyhqvdmdrwwkclnnrwflblzjeaf3akjkuixsdkikrwaaab4bacaqeb4nrk3dxlbcvagkakjkuixsdkjvbkg2divbfegybaecacgyvpf3bkg2zijnvwg2zijnvwg2zijnvwg2zijnvwgyvafkambqpkikwu" style="color:#ffffff;text-decoration:none;font-weight:400"><span style="color:#ffffff;text-decoration:none;font-weight:400"><span data-offset-key="e7ufv-3-0" style="color:#ffffff"><span data-text="true">View Website</span></span></span></a>
+</div></div></div>
+</div></div></div></div></td></tr></tbody></table></div>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto;background-color:#ffffff">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td bgcolor="#ffffff" style="padding:10px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:580px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:10px;width:100%;text-align:left;font-size:15px;word-break:break-word;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;line-height:22px"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true"><div class="" data-block="true" data-editor="arscr" data-offset-key="cvvh9-0-0" style="font-size:11px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;font-style:normal;line-height:18px"><div data-offset-key="cvvh9-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span data-offset-key="cvvh9-0-0" style="font-weight:bold"><span data-text="true">Disclaimer: </span></span><span data-offset-key="cvvh9-0-1"><span data-text="true">The information provided above is on the understanding that it is for illustrative and discussion purposes only. Any party seeking to rely on its content or otherwise should make their own enquiries and research to ensure its relevance to your specific personal and business requirements and circumstances. </span></span>
+</div></div></div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0" class="panel-text"><tbody><tr><td style="padding:20px;text-align:center;font-size:0" class="oneColumnGroup"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><div style="width:100%;display:inline-block;vertical-align:top;max-width:560px" class="column"><table width="100%" style="border-spacing:0;font-family:sans-serif" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0;width:100%;text-align:left;font-size:15px;word-break:break-word;font-family:Poppins, Helvetica, Arial, sans-serif;color:#333333;line-height:22px;font-weight:400"><div class="DraftEditor-root"><div class="DraftEditor-editorContainer"><div class="public-DraftEditor-content" contenteditable="false" spellcheck="false" style="outline:none;user-select:text;-webkit-user-select:text;white-space: normal;word-wrap:break-word"><div data-contents="true">
+<div class="" data-block="true" data-editor="ar6h6" data-offset-key="fu3go-0-0" style="font-size:11px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;font-style:normal;line-height:18px"><div style="text-align:center"><div data-offset-key="fu3go-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span data-offset-key="fu3go-0-0"><span data-text="true">This email was sent to </span></span><span data-offset-key="fu3go-2-0"><span data-text="true">.</span></span>
+</div></div></div>
+<div class="" data-block="true" data-editor="ar6h6" data-offset-key="fvtd4-0-0" style="font-size:11px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;font-style:normal;line-height:18px"><div style="text-align:center"><div data-offset-key="fvtd4-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span data-offset-key="fvtd4-0-0"><span data-text="true">Having trouble viewing this email? </span></span><a style="color:#021c63;text-decoration:none"><span style="color:#021c63;text-decoration:none"><span data-offset-key="fvtd4-1-0"><span data-text="true">View it in your browser</span></span></span></a><span data-offset-key="fvtd4-2-0"><span data-text="true">.</span></span>
+</div></div></div>
+<div class="" data-block="true" data-editor="ar6h6" data-offset-key="3qs94-0-0" style="font-size:11px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;font-style:normal;line-height:18px"><div style="text-align:center"><div data-offset-key="3qs94-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span data-offset-key="3qs94-0-0"><span data-text="true">Don't want to receive these anymore? </span></span><a style="color:#021c63;text-decoration:none"><span style="color:#021c63;text-decoration:none"><span data-offset-key="3qs94-1-0"><span data-text="true">Unsubscribe here.</span></span></span></a>
+</div></div></div>
+<div class="" data-block="true" data-editor="ar6h6" data-offset-key="6l14m-0-0" style="font-size:11px;color:#333333;font-family:Poppins, Helvetica, Arial, sans-serif;font-weight:400;font-style:normal;line-height:18px"><div style="text-align:center"><div data-offset-key="6l14m-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+<span data-offset-key="6l14m-0-0"><span data-text="true">Powered by </span></span><a href="https://t.apemail.net/c/nqkr6vk3kzmvyhqvdmdrwaaab4bacaqdb4nqogyhdmkxs5qvdmkqcvagayhveflk-nqdbwfkcivnrkgyvpf3bkgyfauhaabipdmdaidqgamnqogyfaqha6aihaynqogyhdmkr6vk3kzmvyhqvdmdrwwkclnnrwflwkrbv4qksm5peouqvdmaaadycaebagdy3cvpugq2hiqgrqgcwkrbv4qksi5peouqzkrmfufi3incueuq3aeaqiai3cv4xmfi3lfbfwwy3lfbfwwy3lfbfwwy3lfbfwwy3cuavibqgb5jbk2q" style="color:#021c63;text-decoration:none"><span style="color:#021c63;text-decoration:none"><span data-offset-key="6l14m-1-0"><span data-text="true">ActivePipe</span></span></span></a>
+</div></div></div>
+</div></div></div></div></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><img style="width:100%;border:0;height:45px" height="45" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+<div style="max-width:600px;Margin:0 auto">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]--><table width="100%" style="border-spacing:0;font-family:sans-serif;Margin:0 auto;width:100%;max-width:600px" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding:0"><img style="width:100%;border:0;height:45px" height="45" src="https://d2wn0fwevmicfp.cloudfront.net/images/empty.gif" alt=" "></td></tr></tbody></table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+</div>
+</center>
+<span style="display:none !important;font-size:0;line-height:0;max-height:0;max-width:0;opacity:0;overflow:hidden;visibility:hidden;color:#f3f5f6">ActivePipe Message ID: 2488911</span>
+</body>
+</html>
